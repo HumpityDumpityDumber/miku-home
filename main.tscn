@@ -1,0 +1,38 @@
+[gd_scene load_steps=8 format=3 uid="uid://5rvnlw23nw6j"]
+
+[ext_resource type="PackedScene" uid="uid://x87lbtlshdnw" path="res://miku.tscn" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://bmdek12wyn81h" path="res://main.gd" id="1_h2yge"]
+[ext_resource type="Texture2D" uid="uid://crgwcrv6wmimx" path="res://sky.jpg" id="2_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://dpvc8kj6ubthx" path="res://bedroom.tscn" id="2_h2yge"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_lquwl"]
+panorama = ExtResource("2_1bvp3")
+
+[sub_resource type="Sky" id="Sky_7mycd"]
+sky_material = SubResource("PanoramaSkyMaterial_lquwl")
+
+[sub_resource type="Environment" id="Environment_lquwl"]
+background_mode = 2
+sky = SubResource("Sky_7mycd")
+ambient_light_source = 3
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 5.0
+reflected_light_source = 2
+
+[node name="Root" type="Node3D"]
+script = ExtResource("1_h2yge")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_lquwl")
+
+[node name="Miku" parent="." instance=ExtResource("1_0xm2m")]
+
+[node name="House" type="Node3D" parent="."]
+
+[node name="Bedroom" parent="House" instance=ExtResource("2_h2yge")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.720793, -0.50463, 0.475191, -8.81816e-08, 0.685552, 0.728024, -0.693151, -0.524754, 0.494141, 1.32013, 1.75265, 1.44099)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.838043, -0.396821, 0.374456, 0, 0.686314, 0.727306, -0.545605, 0.609513, -0.57516, 0.653815, 2.31337, -1.52527)
