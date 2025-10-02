@@ -1,8 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://x87lbtlshdnw"]
+[gd_scene load_steps=7 format=3 uid="uid://x87lbtlshdnw"]
+
+[ext_resource type="Script" uid="uid://2tx8xul2pi35" path="res://miku/3d_label.gd" id="1_6se5y"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5tx3q"]
 
 [sub_resource type="SystemFont" id="SystemFont_ea25l"]
+subpixel_positioning = 0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6se5y"]
 
@@ -22,6 +25,7 @@ emission = Color(1, 1, 0.392157, 1)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_5tx3q")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="3DLabel" type="MeshInstance3D" parent="."]
 mesh = SubResource("TextMesh_ea25l")
 surface_material_override/0 = SubResource("StandardMaterial3D_5tx3q")
+script = ExtResource("1_6se5y")

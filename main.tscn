@@ -1,30 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://5rvnlw23nw6j"]
+[gd_scene load_steps=4 format=3 uid="uid://5rvnlw23nw6j"]
 
 [ext_resource type="PackedScene" uid="uid://x87lbtlshdnw" path="res://miku/miku.tscn" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://bmdek12wyn81h" path="res://main.gd" id="1_h2yge"]
-[ext_resource type="Texture2D" uid="uid://crgwcrv6wmimx" path="res://assets/sky.jpg" id="2_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://djxe2jag1wuss" path="res://house/bedroom.tscn" id="2_h2yge"]
-[ext_resource type="Script" uid="uid://bn784urvokea" path="res://rich_text_label.gd" id="5_lquwl"]
-
-[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_lquwl"]
-panorama = ExtResource("2_1bvp3")
-
-[sub_resource type="Sky" id="Sky_7mycd"]
-sky_material = SubResource("PanoramaSkyMaterial_lquwl")
-
-[sub_resource type="Environment" id="Environment_lquwl"]
-background_mode = 2
-sky = SubResource("Sky_7mycd")
-ambient_light_source = 3
-ambient_light_color = Color(1, 1, 1, 1)
-ambient_light_energy = 5.0
-reflected_light_source = 2
 
 [node name="Root" type="Node3D"]
 script = ExtResource("1_h2yge")
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_lquwl")
 
 [node name="Miku" parent="." instance=ExtResource("1_0xm2m")]
 transform = Transform3D(0.92032754, 0, 0.39114887, -0.19206995, 0.87113667, 0.45191815, -0.3407441, -0.49104068, 0.80173105, 0, 0, 0)
@@ -39,10 +20,3 @@ transform = Transform3D(0.720793, -0.50463, 0.475191, -8.81816e-08, 0.685552, 0.
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.838043, -0.396821, 0.374456, 0, 0.686314, 0.727306, -0.545605, 0.609513, -0.57516, 0.653815, 2.31337, -1.52527)
-
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_left = 31.0
-offset_top = 36.0
-offset_right = 313.0
-offset_bottom = 151.0
-script = ExtResource("5_lquwl")
