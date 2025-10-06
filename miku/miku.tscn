@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://cq782j5ij1omx"]
-
-[ext_resource type="PackedScene" uid="uid://behdh6ol50m4l" path="res://miku/shiteyanyo_-_hatsune_miku.glb" id="1_6se5y"]
-
-[node name="Sketchfab_Scene" instance=ExtResource("1_6se5y")]

@@ -97,18 +97,6 @@
 			z-index: 1;
 		}
 	</style>
-	<script>
-		function msgClient(msg) {
-			try {
-				msgHook(msg)
-			} catch (error) {
-				console.error("msgHook() function was not found when trying to send a message. Did you inject it? Your client needs to inject a msgHook() function that enables native webview messaging. Refer to https://docs.mikuhome.com for help creating a client.")
-				console.info(`%capp -> client msg: ${msg}`, "color: green; font-weight: 999;");
-			}
-		};
-
-		const params = new URLSearchParams(window.location.search);
-	</script>
 </head>
 
 <body>

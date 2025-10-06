@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://djxe2jag1wuss"]
 
-[ext_resource type="Script" uid="uid://2tx8xul2pi35" path="res://house/3d_label.gd" id="1_woqk1"]
+[ext_resource type="Script" uid="uid://2tx8xul2pi35" path="res://background/house/3d_label.gd" id="1_woqk1"]
 
 [sub_resource type="TextMesh" id="TextMesh_es7lx"]
 text = "placeholder"

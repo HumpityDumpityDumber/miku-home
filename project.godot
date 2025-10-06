@@ -13,9 +13,8 @@ config_version=5
 config/name="miku home"
 run/main_scene="uid://5rvnlw23nw6j"
 config/features=PackedStringArray("4.5", "GL Compatibility")
-boot_splash/bg_color=Color(0.7019608, 0.08235294, 0.3254902, 0)
-boot_splash/fullsize=false
-boot_splash/image="uid://cprxpfd6r4crd"
+boot_splash/bg_color=Color(0.18, 0.18, 0.18, 1)
+boot_splash/image="uid://77lcdkwbx1jn"
 config/icon="res://assets/icon.svg"
 
 [display]

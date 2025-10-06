@@ -1,0 +1,36 @@
+[gd_scene load_steps=8 format=3 uid="uid://5rvnlw23nw6j"]
+
+[ext_resource type="PackedScene" uid="uid://cq782j5ij1omx" path="res://background/miku/miku.tscn" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://bmdek12wyn81h" path="res://background/main.gd" id="1_h2yge"]
+[ext_resource type="PackedScene" uid="uid://djxe2jag1wuss" path="res://background/house/bedroom.tscn" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://br6aei3c6ew85" path="res://assets/sky.jpg" id="4_rlcb4"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_jvxor"]
+panorama = ExtResource("4_rlcb4")
+
+[sub_resource type="Sky" id="Sky_6m61t"]
+sky_material = SubResource("PanoramaSkyMaterial_jvxor")
+
+[sub_resource type="Environment" id="Environment_7hyrl"]
+background_mode = 2
+sky = SubResource("Sky_6m61t")
+
+[node name="Root" type="Node3D"]
+script = ExtResource("1_h2yge")
+
+[node name="House" type="Node3D" parent="."]
+
+[node name="Bedroom" parent="House" instance=ExtResource("2_h2yge")]
+transform = Transform3D(0.7034829, -0.113503374, 0.70159036, 0.12894161, 0.9911654, 0.031061381, -0.69891775, 0.06861308, 0.7119032, -0.1868552, 0.39216256, -0.18584007)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.7669403, 0.037633453, 0.6406141, -0.006401798, 0.99867797, -0.051004034, -0.6416866, 0.035015967, 0.7661672, 0.97358406, 0.38254452, 1.2284268)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.838043, -0.396821, 0.374456, 0, 0.686314, 0.727306, -0.545605, 0.609513, -0.57516, 0.653815, 2.31337, -1.52527)
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_0xm2m")]
+transform = Transform3D(0.72189313, 0, 0.69200456, 0, 1, 0, -0.69200456, 0, 0.72189313, -1.0506566, 0.24907696, -1.1772112)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_7hyrl")

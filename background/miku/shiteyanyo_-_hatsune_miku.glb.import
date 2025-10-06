@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://behdh6ol50m4l"
-path="res://.godot/imported/shiteyanyo_-_hatsune_miku.glb-29d4f927b3fbdb2f77848afb154e453e.scn"
+path="res://.godot/imported/shiteyanyo_-_hatsune_miku.glb-61370dd2badb0a53e453719cbf8bcdd5.scn"
 
 [deps]
 
-source_file="res://miku/shiteyanyo_-_hatsune_miku.glb"
-dest_files=["res://.godot/imported/shiteyanyo_-_hatsune_miku.glb-29d4f927b3fbdb2f77848afb154e453e.scn"]
+source_file="res://background/miku/shiteyanyo_-_hatsune_miku.glb"
+dest_files=["res://.godot/imported/shiteyanyo_-_hatsune_miku.glb-61370dd2badb0a53e453719cbf8bcdd5.scn"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4w36o5mvnaei"
-path.s3tc="res://.godot/imported/shiteyanyo_-_hatsune_miku_0.png-db6a4560b0b5234fb45720ac4b8d9133.s3tc.ctex"
+path.s3tc="res://.godot/imported/shiteyanyo_-_hatsune_miku_0.png-cd52cf507f9f66d92675f823ef8fdc9d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://miku/shiteyanyo_-_hatsune_miku_0.png"
-dest_files=["res://.godot/imported/shiteyanyo_-_hatsune_miku_0.png-db6a4560b0b5234fb45720ac4b8d9133.s3tc.ctex"]
+source_file="res://background/miku/shiteyanyo_-_hatsune_miku_0.png"
+dest_files=["res://.godot/imported/shiteyanyo_-_hatsune_miku_0.png-cd52cf507f9f66d92675f823ef8fdc9d.s3tc.ctex"]
 
 [params]
 
