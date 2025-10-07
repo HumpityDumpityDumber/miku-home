@@ -1,3 +1,6 @@
-[gd_scene format=3 uid="uid://cs2bkrkqxpeaw"]
+[gd_scene load_steps=2 format=3 uid="uid://cs2bkrkqxpeaw"]
+
+[ext_resource type="Script" uid="uid://ckl1beo60iabg" path="res://overlay/main.gd" id="1_no7ql"]
 
 [node name="Main" type="Node3D"]
+script = ExtResource("1_no7ql")

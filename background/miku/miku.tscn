@@ -1,5 +1,5 @@
-[gd_scene load_steps=2 format=3 uid="uid://cq782j5ij1omx"]
+[gd_scene load_steps=2 format=3 uid="uid://bfr4e4p6ltey4"]
 
-[ext_resource type="PackedScene" uid="uid://behdh6ol50m4l" path="res://background/miku/shiteyanyo_-_hatsune_miku.glb" id="1_6se5y"]
+[ext_resource type="PackedScene" uid="uid://cuubcigidyu48" path="res://background/miku/hatsune_miku__escenario_colorido.glb" id="1_e1vh0"]
 
-[node name="Sketchfab_Scene" instance=ExtResource("1_6se5y")]
+[node name="miku" instance=ExtResource("1_e1vh0")]

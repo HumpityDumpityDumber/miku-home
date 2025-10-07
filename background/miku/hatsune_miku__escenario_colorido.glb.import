@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://behdh6ol50m4l"
-path="res://.godot/imported/shiteyanyo_-_hatsune_miku.glb-61370dd2badb0a53e453719cbf8bcdd5.scn"
+uid="uid://cuubcigidyu48"
+path="res://.godot/imported/hatsune_miku__escenario_colorido.glb-c5d04e383bc42821bafd9cdf1a3300d7.scn"
 
 [deps]
 
-source_file="res://background/miku/shiteyanyo_-_hatsune_miku.glb"
-dest_files=["res://.godot/imported/shiteyanyo_-_hatsune_miku.glb-61370dd2badb0a53e453719cbf8bcdd5.scn"]
+source_file="res://background/miku/hatsune_miku__escenario_colorido.glb"
+dest_files=["res://.godot/imported/hatsune_miku__escenario_colorido.glb-c5d04e383bc42821bafd9cdf1a3300d7.scn"]
 
 [params]
 
