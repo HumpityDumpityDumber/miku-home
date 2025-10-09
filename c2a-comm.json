@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Miku Home Client to App Communication",
+  "description": "The communication schema for messaging from a client to the application Miku Home.",
+  "type": "object",
+  "properties": {
+	"sys_info": {
+		"description": "System information",
+		"type": "object",
+		"properties": {
+		  "cpu_usage": { 
+			"type": "number",
+			"minimum": 0,
+			"maximum": 100
+		  },
+		  "memory_usage": { 
+			"type": "number",
+			"minimum": 0,
+			"maximum": 100
+		  },
+		  "username": { "type": "string" },
+		  "hostname": { "type": "string" },
+		  "os": { "type": "string" },
+		  "wm": { "type": "string" },
+		  "uptime": { 
+			"type": "number",
+			"minimum": 0
+		  }
+		}
+	}
+  }
+}

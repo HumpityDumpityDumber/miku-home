@@ -1,0 +1,11 @@
+{
+	"sys_info": {
+		"cpu_usage": 23.5,
+		"memory_usage": 45.2,
+		"username": "johndoe",
+		"hostname": "johns-pc",
+		"os": "Windows 10",
+		"wm": "Explorer",
+		"uptime": 123457
+	}
+}

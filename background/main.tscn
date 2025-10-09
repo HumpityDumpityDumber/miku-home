@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://5rvnlw23nw6j"]
 
-[ext_resource type="PackedScene" uid="uid://bfr4e4p6ltey4" path="res://background/miku/miku.tscn" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://cq782j5ij1omx" path="res://background/miku/miku.tscn" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://bmdek12wyn81h" path="res://background/main.gd" id="1_h2yge"]
 [ext_resource type="PackedScene" uid="uid://djxe2jag1wuss" path="res://background/house/bedroom.tscn" id="2_h2yge"]
 [ext_resource type="Texture2D" uid="uid://br6aei3c6ew85" path="res://background/assets/sky.jpg" id="4_rlcb4"]
@@ -15,16 +15,16 @@ sky_material = SubResource("PanoramaSkyMaterial_jvxor")
 background_mode = 2
 sky = SubResource("Sky_6m61t")
 
-[node name="Root" type="Node3D"]
+[node name="root" type="Node3D"]
 script = ExtResource("1_h2yge")
 
-[node name="House" type="Node3D" parent="."]
+[node name="house" type="Node3D" parent="."]
 
-[node name="Bedroom" parent="House" instance=ExtResource("2_h2yge")]
-transform = Transform3D(0.6478569, -0.2435183, 0.72178984, 0.26020363, 0.96127826, 0.09076623, -0.71594393, 0.12900878, 0.6861349, -0.30491704, 0.4940368, -0.543975)
+[node name="bedroom" parent="house" instance=ExtResource("2_h2yge")]
+transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.7669403, 0.037633453, 0.6406141, -0.006401798, 0.99867797, -0.051004034, -0.6416866, 0.035015967, 0.7661672, 0.7798253, 0.38254452, 0.67573863)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45432615, 1.0932869)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.838043, -0.396821, 0.374456, 0, 0.686314, 0.727306, -0.545605, 0.609513, -0.57516, 0.653815, 2.31337, -1.52527)
@@ -33,4 +33,4 @@ transform = Transform3D(-0.838043, -0.396821, 0.374456, 0, 0.686314, 0.727306, -
 environment = SubResource("Environment_7hyrl")
 
 [node name="miku" parent="." instance=ExtResource("1_0xm2m")]
-transform = Transform3D(0.9633407, 0, 0.26828098, 0, 1, 0, -0.26828098, 0, 0.9633407, 0.4201449, 0, -0.4743554)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.043458223, 0.37124854)
